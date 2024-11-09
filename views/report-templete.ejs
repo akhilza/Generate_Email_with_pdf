@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate</title>
+</head>
+<body>
+     <div style="width: 85%; margin: 0 7.5%;">
+         <div style="text-align: center; padding-left: 50px;">
+          <h3>USER REPORT</h3>
+          <center>
+              <table>
+                  <% if(users.length > 0){ %>
+                     <% users.forEach(user => {%>
+                        <tr><td><%= users.name %></td><td><%= users.email %></td></tr>
+                      <% }); %>
+                      <% } %>
+                    </table>
+          </center>
+         </div>
+     </div>
+</body>
+</html>
